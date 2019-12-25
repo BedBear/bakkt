@@ -1,0 +1,680 @@
+
+<!DOCTYPE html><html lang="en" class="no-js"><head><meta name="viewport" content="width=device-width, initial-scale=1"><title>BAKKT Markets</title>
+    <meta property="og:title" content="Regulated infrastructure for bitcoin markets and custody" />
+    <meta property="og:image" content="https://www.bakkt.com/publicdocs/images/Bakkt-BrandBackground-Rev.jpg" />
+    <link rel="icon" 
+          type="image/png" 
+          href="https://www.bakkt.com/publicdocs/images/Bakkt-B-Circle-Emblem_small.png"><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><link id="css-fonts" rel="stylesheet" href="https://static.bakkt.com/font-suisse-intl/1.0.2/fonts.css"/><link rel="stylesheet" href="https://static.bakkt.com/icegroupweb-styles/4.6.1/css/bakkt.min.css"/><script>window.ICE = window.ICE || {};
+    window.ICE.env = 'ord';</script><script src="https://static.bakkt.com/babel-polyfill/6.26.0/polyfill.min.js"></script><script src="https://static.bakkt.com/whatwg-fetch/0.11.0/fetch.min.js"></script><script src="https://static.bakkt.com/react/16.8.6/react.production.min.js"></script><script src="https://static.bakkt.com/react/16.8.6/react-dom.production.min.js"></script></head><body data-navdrawer-hidden><div id='content-5472dd14-68a5-47e6-8fd9-762dcdb572dd'><div data-reactroot=""><!--googleoff: all--><html><head></head><body><div class="tophead fixedheader"><a href="/index"><img src="/publicdocs/images/digital_asset_logo_550X122_google.png" width="125px"/></a><div><div id='content-fbb153c4-b63b-4d83-8b65-7ec7922411d9'><nav class="top-nav-menu" data-reactroot=""><style>
+    .top-nav-menu > style {
+      display: none;
+    }
+    .top-nav-menu .mini-menu {
+      display: none;
+    }
+    
+    .top-nav-menu ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      background: rgba(255,255,255,0);
+    }
+    
+    .top-nav-menu a {
+      text-decoration: none;
+      color: #000;
+    }
+    
+    .top-nav-menu li > ul {
+      visibility: hidden;
+    }
+    
+    .top-nav-menu li.active > ul {
+      visibility: visible;
+      z-index: 1;
+    }
+    
+    .top-nav-menu ul > li > a:not(.btn) {
+      color: #000;
+      padding: 5px 10px;
+      margin: 5px 5px;
+    }
+    
+    .top-nav-menu ul > li.active > a:not(.btn):hover {
+      color: #00433c;
+    }
+    
+    .top-nav-menu > ul > li > a:not(.btn) {
+      color: #000;
+    }
+    
+    .top-nav-menu > ul > li.active > a:not(.btn) {
+      color: rgba(155,155,155,1);
+    }
+    
+    .top-nav-menu > ul > li {
+      display: flex;
+      align-items: center;
+    }
+    
+    .top-nav-menu > ul > li + li {
+      margin-right: 15px;
+      margin-left: 0;
+    }
+    
+    .top-nav-menu > ul.right > li + li {
+      margin-left: 15px;
+      margin-right: 0;
+    }
+    
+    .top-nav-menu li > ul {
+      position: absolute;
+      left: 0;
+      top: 100%;
+      flex-direction: column;
+      width: auto;
+      padding: 5px;
+      margin: 10px;
+      white-space: nowrap;
+    }
+    
+    .top-nav-menu > ul > li.has-sub.active > ul {
+      box-shadow: 0 2px 5px -2px #ddd;
+    }
+    
+    .top-nav-menu > ul > li.active > ul:before {
+      position: absolute;
+      content: '';
+      width: 0;
+      height: 0;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-bottom: 6px solid #ddd;
+      left: 15px;
+      top: -6px;
+    }
+    .top-nav-menu > ul > li.active > ul:after {
+      position: absolute;
+      content: '';
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-bottom: 5px solid #fff;
+      left: 16px;
+      top: -5px;
+    }
+    
+    .top-nav-menu li {
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    
+    .top-nav-menu li.active {
+      overflow: visible;
+    }
+    
+    .top-nav-menu li h6 {
+      color: #000;
+      padding-left: 10px;
+      margin-bottom: 0;
+    }
+    
+    .top-nav-menu li > ul li > ul {
+      left: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+      box-shadow: 2px 2px 5px -2px #ddd;
+      margin-left: 10px;
+    }
+    
+    .top-nav-menu li > *:not(ul):not(i) {
+      display: block;
+    }
+    
+    .top-nav-menu li span {
+      color: #bbb;
+      display: block;
+      font-size: 0.8em;
+    }
+    
+    .top-nav-menu li.has-sub {
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding-right: 5px;
+    }
+    .top-nav-menu li.has-sub > i {
+      color: #999;
+      font-size: 0.6em;
+      right: 5px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    
+    .top-nav-menu > ul > li.has-sub > i {
+      transform: translateY(-50%) rotate(90deg);
+    }
+    
+    .top-nav-menu li.has-sub.active > i {
+      transform: rotate(90deg);
+    }
+    
+    .top-nav-menu ul.right {
+      justify-content: flex-end;
+    }
+    
+    .top-nav-menu ul hr {
+      margin: 0;
+      border: 1px solid #eee;
+    }
+    
+    .top-nav-menu > ul > li > a:not(.btn)::after {
+      display: block;
+      content: '';
+      border-bottom: 2px solid transparent;
+      transform: scaleX(0);
+      transition: transform 250ms ease-in-out;
+    }
+    
+    .top-nav-menu > ul > li.active > a:not(.btn)::after {
+      border-bottom: 2px solid #000;
+      transform: scaleX(1);
+    }
+    
+    .top-nav-menu li > ul li.active > ul {
+      margin-left: initial;
+      position: absolute;
+      top: 50%;
+      left: 100%;
+      transform: translateY(-50%);
+    }
+    .top-nav-menu ul > li.has-sub > ul {
+      opacity: 0;
+      transition: opacity 0.5s ease-out;
+      background-color: #fff;
+    }
+    
+    .top-nav-menu ul > li.has-sub.active > ul {
+      opacity: 1;
+      border: 1px solid #eee;
+    }
+    
+    .top-nav-menu ul > li.has-sub.active > ul li.has-sub.active > ul {
+      box-shadow: 2px 2px 5px -2px #ddd;
+      border-left: none;
+      left: 99%;
+      right: initial;
+      margin-left: 5px;
+    }
+    
+    .top-nav-menu > ul > li > a.btn {
+      color: #000;
+      background-color: #fff;
+      border-width: 2px;
+      border-style: solid;
+      border-color: #00433c;
+      transition: color 0.2s linear, background-color 0.2s linear, border-color 0.2s linear;
+    }
+    
+    .top-nav-menu > ul > li > a.btn:hover {
+      color: #fff;
+      background-color: #00433c;
+      border: 2px solid #00433c;
+    }
+    
+    /*****************
+    * Media queries *
+    *****************/
+    
+    @media (max-width: 767px) {
+    .top-nav-menu   .mini-menu {
+        display: block;
+        cursor: pointer;
+        position: relative;
+        text-align: right;
+        align-items: center;
+      }
+      .top-nav-menu .mini-menu > span {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      .top-nav-menu .mini-menu > span:first-of-type {
+        text-transform: uppercase;
+        opacity: 1;
+        font-size: 0.8em;
+        transition: opacity 0.2s;
+      }
+      .top-nav-menu .mini-menu.open > span:first-of-type {
+        opacity: 0;
+      }
+      .top-nav-menu .mini-menu > span:last-child {
+        opacity: 0;
+      }
+      .top-nav-menu .mini-menu.open > span:last-child {
+        opacity: 1;
+        font-size: 1.5em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    
+      .top-nav-menu .mini-menu.open + ul {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+      }
+    
+      .top-nav-menu > ul {
+        display: none;
+      }
+    
+      .top-nav-menu ul {
+        flex-direction: column;
+        background-color: #fff;
+      }
+    
+     .top-nav-menu  ul a {
+        text-transform: uppercase;
+        font-size: 0.815rem;
+      }
+    
+      .top-nav-menu li h6,
+      .top-nav-menu li span {
+        display: none;
+      }
+    
+      .top-nav-menu > ul.right > li + li {
+        margin-left: 0;
+      }
+    
+      .top-nav-menu > ul > li > a.btn {
+        margin: 15px 5px 15px 20px;
+      }
+    
+      .top-nav-menu li > ul {
+        position: relative;
+      }
+    
+      .top-nav-menu li.has-sub {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-right: 0;
+      }
+    
+      .top-nav-menu ul > li.has-sub.active > ul {
+        display: block;
+        box-shadow: none;
+        border-left-width: 0;
+        border-right-width: 0;
+        border-bottom-width: 0;
+        width: 100%;
+        margin: 0;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0;
+      }
+    
+      .top-nav-menu ul > li.has-sub > i {
+        top: 23px;
+        right: 20px;
+        transform: rotate(90deg);
+      }
+    
+      .top-nav-menu ul > li.has-sub > ul {
+        left: 0;
+        top: 0;
+        display: none;
+        background-color: #fff;
+      }
+    
+      .top-nav-menu li > ul li.active > ul {
+        position: relative;
+      }
+    
+      .top-nav-menu ul > li.has-sub.active > ul li.has-sub.active > ul {
+        left: 0;
+        margin: 0;
+        box-shadow: none;
+        transform: none;
+        padding: 0;
+      }
+    
+      .top-nav-menu > ul > li.has-sub.active > ul {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+    
+      .top-nav-menu > ul > li:first-of-type,
+      li + li {
+        border-top: 1px solid #eee;
+      }
+    
+      .top-nav-menu > ul > li:last-child {
+        border-bottom: 1px solid #eee;
+      }
+    
+      .top-nav-menu li > *:not(ul):not(i) {
+        max-width: 100%;
+        white-space: normal;
+      }
+    
+      .top-nav-menu ul > li.active > ul a:not(.btn) {
+        margin-left: 20px;
+      }
+    
+      .top-nav-menu ul > li.active > ul a:not(.btn) + ul a:not(.btn) {
+        margin-left: 40px;
+      }
+    
+      .top-nav-menu ul > li.active > ul a:not(.btn) + ul a:not(.btn) + ul a:not(.btn) {
+        margin-left: 60px;
+      }
+    }
+    </style><div class="mini-menu"><span>menu</span><span><i class="sprite-close"></i></span></div><ul class="right"><li class=""><a href="/markets" class="">Markets</a></li><li class=""><a href="/custody" class="">Custody</a></li><li class=""><a href="/payments" class="">Payments</a></li><li class="has-sub"><a href="#" class="">About</a><ul><li class=""><a href="/about" class="">About</a></li><li class=""><a href="/careers" class="">Careers</a></li></ul><i class="chevron-e"></i></li><li class=""><a href="/contact" class="btn btn-primary">Contact us</a></li></ul></nav></div><div id='content-0b637ffe-a5f2-4fc6-89bf-dbbbc7dcd09e'><div class="alert-container" data-reactroot=""></div></div></div></div></body></html><!--googleon: all--><div><div id='content-4bca22c3-f936-4431-b16f-dbc0a9722e86'><div data-reactroot=""><div class="reserve-space-for-menu"></div>
+    <style>
+    .reserve-space-for-menu {
+      margin-top:70px
+    }
+    .tophead nav {
+      text-transform: uppercase;
+      font-size: .85em;
+    }
+    .tophead {
+      width: 100%;
+      max-height: 70px;
+      z-index: 999;
+      padding: 15px 25px;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+      opacity: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .fixedheader {
+      position: fixed;
+      background-color: rgba(255, 255, 255, 1);
+      opacity: 1;
+      top: 0px;
+      border-bottom: 1px solid #ececed;
+    }
+    
+    @media only screen and (max-width: 766px) {
+      .tophead {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      nav {
+        margin-right: 0;
+      }
+    }
+    
+    </style>
+    <script>
+    document.getElementsByTagName("IMG") [0] .alt="Bakkt";
+    </script></div></div></div><script src="https://static.bakkt.com/cms-bakkt-navigation-menu/19.0.21/bakkt-navigation-menu-component.min.js"></script><script src="https://static.bakkt.com/cms-banner/18.3.46/banner-component.min.js"></script><script type="application/json" class="component-data">{"name":"BakktNavigationMenu","version":"19.0.21","props":{"menuStructure":"align: right\nitems:   \n  - name: Markets\n    link: '/markets'\n  - name: Custody\n    link: '/custody'\n  - name: Payments\n    link: '/payments'\n  - name: About\n    items:\n    - name: About\n      link: '/about'\n    - name: Careers\n      link: '/careers'\n  - name: Contact us\n    button: true\n    link: '/contact'","interMenuMargin":15,"intraPaddingTopBottom":"5","intraPaddingLeftRight":"10","intraMarginTopBottom":5,"intraMarginLeftRight":5,"submenuPadding":"5","submenuMargin":10,"buttonBorderWidth":2,"linkColor":{"hex":"#000","rgb":{}},"linkActiveColor":{"hsl":{"h":191.94690265486724,"s":0,"l":0.6078431372549019,"a":1},"hex":"#9b9b9b","rgb":{"r":155,"g":155,"b":155,"a":1},"hsv":{"h":191.94690265486724,"s":0,"v":0.6078431372549019,"a":1},"oldHue":191.94690265486724,"source":"hex"},"subLinkHoverColor":{"hsl":{"h":173.73134328358208,"s":1,"l":0.13137254901960785,"a":1},"hex":"#00433c","rgb":{"r":0,"g":67,"b":60,"a":1},"hsv":{"h":173.73134328358208,"s":1,"v":0.2627450980392157,"a":1},"oldHue":191.94690265486724,"source":"hex"},"backgroundColor":{"rgb":{"r":255,"g":255,"b":255,"a":0}},"subBackgroundColor":{"hex":"#fff","rgb":{}},"underbarColor":{"hex":"#000","rgb":{}},"subheaderColor":{"hex":"#000","rgb":{}},"submenuLinkColor":{"hex":"#000","rgb":{}},"descriptionColor":{"hex":"#bbb","rgb":{}},"buttonColor":{"hex":"#000","rgb":{}},"buttonBorderColor":{"hsl":{"h":173.73134328358208,"s":1,"l":0.13137254901960785,"a":1},"hex":"#00433c","rgb":{"r":0,"g":67,"b":60,"a":1},"hsv":{"h":173.73134328358208,"s":1,"v":0.2627450980392157,"a":1},"oldHue":173.73134328358208,"source":"hex"},"buttonBackgroundColor":{"hex":"#fff","rgb":{}},"buttonHoverColor":{"hex":"#fff","rgb":{}},"buttonHoverBorderColor":{"hsl":{"h":173.73134328358208,"s":1,"l":0.13137254901960785,"a":1},"hex":"#00433c","rgb":{"r":0,"g":67,"b":60,"a":1},"hsv":{"h":173.73134328358208,"s":1,"v":0.2627450980392157,"a":1},"oldHue":173.73134328358208,"source":"hex"},"buttonHoverBackgroundColor":{"hsl":{"h":173.73134328358208,"s":1,"l":0.13137254901960785,"a":1},"hex":"#00433c","rgb":{"r":0,"g":67,"b":60,"a":1},"hsv":{"h":173.73134328358208,"s":1,"v":0.2627450980392157,"a":1},"oldHue":173.73134328358208,"source":"hex"},"elementId":"content-fbb153c4-b63b-4d83-8b65-7ec7922411d9"},"initialData":null}</script><script type="application/json" class="component-data">{"name":"Banner","version":"18.3.46","props":{"elementId":"content-0b637ffe-a5f2-4fc6-89bf-dbbbc7dcd09e"},"initialData":null}</script></div></div><div><div id='content-c8987763-7971-4edc-a44a-20aafb5720a3'><div data-reactroot=""><!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123340676-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-123340676-1');
+    </script>
+    
+    <script type="text/javascript">
+        var _elqQ = _elqQ || [];
+        _elqQ.push(['elqSetSiteId', '600958837']);
+        _elqQ.push(['elqTrackPageView']);
+        
+        (function () {
+            function async_load() {
+                var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+                s.src = '//img04.en25.com/i/elqCfg.min.js';
+                var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+            }
+            if (window.addEventListener) window.addEventListener('DOMContentLoaded', async_load, false);
+            else if (window.attachEvent) window.attachEvent('onload', async_load); 
+        })();
+    </script>
+    
+    <script
+     src="https://code.jquery.com/jquery-3.3.0.js"
+     integrity="sha256-TFWSuDJt6kS+huV+vVlyV1jM3dwGdeNWqezhTxXB/X8="
+     crossorigin="anonymous"></script>
+    <style>
+    .subhead {
+    font-size: 1.75rem;
+    }
+    h2 {
+    font-size: 1.35em;
+    }
+    @media screen and (min-width: 768px){
+    .landing-highlight, .landing-section {
+    padding-top: 8.3333%;
+    }
+    }
+    p {
+    line-height: 1.5;
+    }
+    </style>
+    
+    
+    <div class="landing-section spacer-lg" style="padding-top: 4em">
+    
+    <h1 class="lead text-center" style="color: #000096;">Regulated infrastructure for bitcoin markets and custody</h1>
+    
+    <p class="text-center spacer-lg">Bakkt, ICE Futures U.S. and ICE Clear US are bringing federally regulated price discovery to bitcoin markets. Fueled by the same technology and expertise that powers ICE’s global markets, the Bakkt Bitcoin Daily and Monthly Futures contracts enable physical delivery through secure, regulated custody.</p>
+    
+    
+    <p class="subhead text-center" style="color: #007c46;">Bakkt is setting the standard for institutional crypto markets:</p>
+    
+    <div class="tile-row spacer-lg">
+    
+    <div class="tile tile-bordered">
+    <div class="tile-content">
+    <div class="text-center"><img  class="spacer-sm" alt="regulated digital assets icon" src="/publicdocs/images/Bakkt-Icons_BKT-Compliance-01.png" /></img></div>
+    <h4 class="text-center spacer-md" style="color: #007c46; line-height: 1em;"><strong>The first end-to-end regulated digital asset ecosystem for institutions</strong></h4>
+    <ul class="list">
+    <li>Meets the highest compliance, surveillance and regulatory standards for digital asset markets</li>
+    <li>ICE Futures U.S. and ICE Clear US are accessible by qualified market participants in the U.S. and internationally</li>
+    <li>Customers’ bitcoin will be stored in the Bakkt Warehouse, which is operated by Bakkt Trust, a qualified custodian and limited purpose trust company regulated by the New York State Department of Financial Services (NYDFS)</li></ul>
+    </div>
+    </div>
+    
+    <div class="tile tile-bordered">
+    <div class="tile-content">
+    <div class="text-center"><img alt="Bakkt institutional market participants icon" class="spacer-sm" src="/publicdocs/images/Bakkt-Icons_BKT-Institutional.png" /></img></div>
+    <h4 class="text-center spacer-lg" style="color: #007c46; line-height: 1em;"><strong>Designed for institutional market participants</strong></h4>
+    <ul class="list">
+    <li>Simplified, professional trading access to IFUS via WebICE, ISVs, and API connection</li>
+    <li>Bank-level AML/KYC policies, paired with extensive blockchain surveillance</li>
+    <li>Bakkt will undergo regular financial, security and operational control audits, including SOC certifications</li></ul>
+    </div>
+    </div>
+    
+    <div class="tile tile-bordered">
+    <div class="tile-content">
+    <div class="text-center"><img alt="Bakt market integrity and asset security icon" class="spacer-sm" src="/publicdocs/images/Bakkt-Icons_BKT-MarketIntegrity.png" /></img></div>
+    <h4 class="text-center spacer-lg" style="color: #007c46; line-height: 1em;"><strong>Best-in-class market integrity and asset security</strong></h4>
+    
+    <ul class="list">
+    <li>Strict operating procedures to direct the safekeeping and storage of customers’ digital assets</li>
+    <li>Bakkt’s cold and warm wallets are covered by a $125,000,000 insurance policy from a leading global syndicate</li>
+    <li>$35,000,000 “skin in the game” contribution to the ICE Clear US guarantee fund, specifically for bitcoin-related losses in the risk waterfall</li></ul>
+    </div>
+    </div>
+    
+    </div>
+    
+    
+    <h2 class="lead text-center" style="color: #000096;">Bakkt<sup>TM</sup> Bitcoin (USD) Futures & Options</h2>
+    
+    <p class="text-center spacer-xl">The Bakkt Bitcoin Futures & Options complex is designed to promote regulated price discovery and market liquidity.  With the broadest range of trading and risk management tools across geographies and time zones, our bitcoin derivatives complex supports the hedging and exposure requirements of a broad range of institutional and retail market participants. The Bakkt Warehouse supports physical delivery where elected for futures, and is also available for institutional custody services for securing bitcoin balances outside of futures markets.
+    </p>
+    
+    <div class="tile tile-bordered">
+    <div class="tile-content">
+    <div class="row spacer-xs">
+    
+    <div class="true-grid-8 spacer-xs">
+    
+    <h4 class="spacer-md" style="color: #007c46; line-height: 1em;"><strong>Physically Delivered Bakkt Bitcoin (USD) Daily & Monthly Futures</strong></h4>
+    <ul class="list">
+    <li>Listed on ICE Futures U.S. and cleared by ICE Clear U.S.</li>
+    <li>Settlement price does not rely on the unregulated bitcoin spot market</li>
+    <li>Margined daily and monthly contracts with ability to go to physical delivery or close out for cash settlement prior to expiry</li>
+    <li>Delivers to the Bakkt Warehouse, which is operated by Bakkt Trust, a qualified custodian and limited purpose trust company regulated by the New York State Department of Financial Services (NYDFS)</li>
+    <li>Available on ISVs and WebICE</li></ul>
+    
+    <h4 class="spacer-md" style="color: #007c46; line-height: 1em;"><strong>Bakkt Bitcoin (USD) Monthly Options</strong></h4>
+    <ul class="list spacer-xs">
+    <li>Listed on ICE Futures U.S. and cleared by ICE Clear U.S.</li>
+    <li>Settles into the underlying Bakkt Bitcoin (USD) Monthly Futures contract two days prior to the last trade date of the underlying futures contract</li>
+    <li class="spacer-xs">Limited strikes for the front three monthly futures</li></ul>
+    </div>
+    
+    <div class="visible-xs"><p class="spacer-lg"></p></div>
+    <div class="true-grid-4 spacer-xs">
+    <h4 class="spacer-md" style="color: #007c46; line-height: 1em;"><strong>Contract Specifications</strong></h4>
+    <ul class="report-list list-chevron text-left">
+    <li><a style="color: #000000" href="https://www.theice.com/products/72035483/Bakkt-Bitcoin-USD-Daily-Futures-Contact" target="_blank">Bakkt Bitcoin (USD) Daily Futures (BTC)</a></li>
+    <li><a style="color: #000000" href="https://www.theice.com/products/72035464/Bakkt-Bitcoin-USD-Monthly-Futures-Contact" target="_blank">Bakkt Bitcoin (USD) Monthly Futures (BTM)</a></li>
+    <li><a style="color: #000000" href="https://www.theice.com/products/72948304/Option-on-Bakkt-Bitcoin-USD-Monthly-Futures" target="_blank">Bakkt Bitcoin (USD) Monthly Options (BTM)</a></li>
+    </ul>
+    </div>
+    
+    <div class="visible-xs"><p class="spacer-lg"></p></div>
+    <div class="true-grid-4 spacer-xs">
+    <h4 class="spacer-md" style="color: #007c46; line-height: 1em;"><strong>More information</strong></h4>
+    <ul class="report-list list-chevron text-left">
+    <li><a style="color: #000000" href="https://www.bakkt.com/publicdocs/Bakkt_Bitcoin_Futures_and_Options_Overview.pdf" target="_blank">Bakkt Bitcoin Futures & Options Overview</a></li>
+    <li><a style="color: #000000" href="https://www.bakkt.com/publicdocs/Bakkt_faq.pdf" target="_blank">FAQs</a></li>
+    <li><a style="color: #000000" href="https://www.theice.com/futures-us/notices#exchange-notices" target="_blank">IFUS Notices</a></li>
+    <li><a style="color: #000000" href="https://www.theice.com/futures-us/regulation#rulebook" target="_blank">IFUS Rulebook</a></li>
+    <li><a style="color: #000000" href="https://www.bakkt.com/publicdocs/Bakkt_FCM_Brochure.pdf" target="_blank">FCM Brochure</a></li>
+    <li><a style="color: #000000" href="https://www.bakkt.com/publicdocs/Bakkt_Bitcoin_Futures_Workflow.pdf" target="_blank">Bakkt Bitcoin Futures Workflow</a></li>
+    <li><a style="color: #000000" href="https://www.bakkt.com/publicdocs/Bakkt_End_to_End_Regulated_Environment.pdf" target="_blank">End-to-End Regulated Environment</a></li>
+    </ul>
+    <p class="text-left spacer-xs">
+    <a href="/cdn-cgi/l/email-protection#7c0f1d10190f3c1e1d171708521f1311" class="btn" style="background: #00433c;">Get started</a></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    
+    <div class="tile tile-bordered spacer-xl">
+    <div class="tile-content">
+    <div class="row">
+    
+    <div class="true-grid-8">
+    <h4 class="spacer-md" style="color: #007c46; line-height: 1em;"><strong>Cash Settled Bakkt Bitcoin (USD) Monthly Futures</strong></h4>
+    <ul class="list">
+    <li>Listed on ICE Futures Singapore and cleared by ICE Clear Singapore</li>
+    <li>Settles on the price of the physically delivered Bakkt Bitcoin (USD) Monthly Futures contract</li>
+    <li>Offers market participants a cost-efficient tool to hedge or gain exposure to bitcoin without the need for physical delivery or reliance on the unregulated bitcoin spot market
+    </li></ul>
+    
+    </div>
+    
+    <div class="true-grid-4">
+    <h4 class="spacer-md" style="color: #007c46; line-height: 1em;"><strong>Contract Specifications</strong></h4>
+    <ul class="report-list list-chevron text-left">
+    <li><a style="color: #000000" href="https://www.theice.com/products/73194874/Bakkt-Bitcoin-USD-Cash-Settled-Monthly-Futures" target="_blank">Bakkt Bitcoin (USD) Cash Settled Monthly Futures (BCM)</a></li>
+    </ul>
+    
+    <div class="visible-xs"><p class="spacer-lg"></p></div>
+    
+    <h4 class="spacer-md" style="color: #007c46; line-height: 1em;"><strong>More information</strong></h4>
+    <ul class="report-list list-chevron text-left">
+    <li><a style="color: #000000" href="https://www.bakkt.com/publicdocs/Bakkt_Bitcoin_USD_Cash_Settled_Monthly_Futures_Overview.pdf" target="_blank">Cash Settled Monthly Futures Overview</a></li>
+    <li><a style="color: #000000" href="https://www.bakkt.com/publicdocs/Bakkt_Bitcoin_USD_Cash_Settled_Monthly_Futures_FAQ.pdf" target="_blank">FAQs</a></li>
+    <li><a style="color: #000000" href="https://www.theice.com/futures-singapore/circulars" target="_blank">IFSG Circulars</a></li>
+    <li><a style="color: #000000" href="https://www.theice.com/futures-singapore/regulation" target="_blank">IFSG Rulebook</a></li>
+    </ul>
+    <p class="text-left">
+    <a href="/cdn-cgi/l/email-protection#5b283a373e28763a28323a1b2f333e32383e75383436647d3838663a28323a2b3a38323d323832352a2e3229323e281b2f333e32383e75383436" class="btn" style="background: #00433c;">Get started</a></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    
+    <div id="marketdata1"></div>
+    </div>
+    
+    <style>
+    .h2 {
+    font-size: 2.25 rem;
+    }
+    
+    * {
+      box-sizing: border-box;
+    }
+    
+    
+    
+    a {
+      text-decoration: none;
+    }
+    
+    h1 {
+      font-size: 30px;
+      line-height: 1.8;
+    
+    }
+    
+    p {
+      margin-bottom: 20px;
+      font-size: 17px;
+      line-height: 2;
+    }
+    
+    .tile-bordered-info {
+    border-bottom: 10px solid #000;
+    }
+    .partner-text {
+        font-size: 1.5rem;
+    }
+    </style></div></div><div id='content-1e2aafe8-cb32-4eca-b079-43285f4e33db'><div class="alert-container" data-reactroot=""></div></div><div id='content-e3a402c4-6101-4ccc-a4cf-419a8ee318a4'></div></div><div id='content-4c69320e-2520-4d66-9d27-3a92c7554f93'><div data-reactroot=""><!--googleoff: all--><div><div id='content-e2a96399-7150-4d87-a667-830e9b45cf15'><div data-reactroot=""><footer class="split-footer inverse">
+      <div id="bg-footer" class="split-footer__logo"  style="background-image: url(https://www.bakkt.com/publicdocs/images/Bakkt-BrandBackground-Rev.jpg)">
+        <a href="https://www.bakkt.com"><img src="/publicdocs/images/digital_asset_white_logo_small_horizontal.png" height="24" alt="Bakkt Logo"/> </a>
+        <div class="split-footer__logo__caption"></div>
+      </div>
+      <div>
+        <a href="/terms-of-use" target="_blank" title="Terms of Use">Terms of Use</a>
+      </div>
+      <div class="">
+        <a href="/privacy" target="_blank" title="Privacy Policy">Privacy Policy</a>
+      </div>
+      <div>
+        <a href="/cookies" target="_blank" title="Cookie Policy">Cookies</a>
+      </div>
+      <div>
+        <div style="min-width: 7em">
+          <a href="https://twitter.com/bakkt" target="_blank" title="Bakkt Twitter"><img src="/publicdocs/images/SocialFooter_Twitter_36x36_2x.png" height="18px" width="18px" alt="Social Icon Twitter"
+          /></a>&nbsp;<a href="https://www.facebook.com/bakktapp" target="_blank" title="Bakkt Facebook"><img src="/publicdocs/images/SocialFooter_Facebook_36x36_2x.png" height="18px" width="18px" alt="Facebook Icon"
+          /></a>&nbsp;<a href="https://www.linkedin.com/company/bakkt/" target="_blank" title="LinkedIn Bakkt"><img src="/publicdocs/images/SocialFooter_LinkedIn_36x36_2x.png" width="18px" height="18px" alt="LinkedIn Icon"
+          /></a>&nbsp;<a href="https://www.instagram.com/Bakktapp" target="_blank" title="Bakkt Instagram"><img src="/publicdocs/images/SocialFooter_Instagram_36x36_2x.png" width="18px" height="18px" alt="Instagram Icon" /></a>
+        </div>
+      </div>
+    </footer>
+    
+    <style>
+    @media (max-width: 767px) {
+      .split-footer > * {
+        padding: 1rem;
+      }
+    
+      .split-footer__logo {
+        flex-basis: 100%;
+      }
+    }
+    </style></div></div></div><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://static.bakkt.com/component-init/18.14.0/component-init.min.js"></script><!--googleon: all--></div></div><script src="https://static.bakkt.com/cms-footer-partial/18.3.61/footer-partial-component.min.js"></script><script src="https://static.bakkt.com/cms-header-partial/18.3.61/header-partial-component.min.js"></script><script src="https://static.bakkt.com/cms-banner/18.3.46/banner-component.min.js"></script><script src="https://static.bakkt.com/cms-chart-market-data/19.0.21/chart-market-data-component.min.js"></script><script type="application/json" class="component-data">{"name":"FooterPartial","version":"18.3.61","props":{"elementId":"content-4c69320e-2520-4d66-9d27-3a92c7554f93"},"initialData":{"html":"<!--googleoff: all--><div><div id='content-e2a96399-7150-4d87-a667-830e9b45cf15'><div data-reactroot=\"\"><footer class=\"split-footer inverse\">\n  <div id=\"bg-footer\" class=\"split-footer__logo\"  style=\"background-image: url(https://www.bakkt.com/publicdocs/images/Bakkt-BrandBackground-Rev.jpg)\">\n    <a href=\"https://www.bakkt.com\"><img src=\"/publicdocs/images/digital_asset_white_logo_small_horizontal.png\" height=\"24\" alt=\"Bakkt Logo\"/> </a>\n    <div class=\"split-footer__logo__caption\"></div>\n  </div>\n  <div>\n    <a href=\"/terms-of-use\" target=\"_blank\" title=\"Terms of Use\">Terms of Use</a>\n  </div>\n  <div class=\"\">\n    <a href=\"/privacy\" target=\"_blank\" title=\"Privacy Policy\">Privacy Policy</a>\n  </div>\n  <div>\n    <a href=\"/cookies\" target=\"_blank\" title=\"Cookie Policy\">Cookies</a>\n  </div>\n  <div>\n    <div style=\"min-width: 7em\">\n      <a href=\"https://twitter.com/bakkt\" target=\"_blank\" title=\"Bakkt Twitter\"><img src=\"/publicdocs/images/SocialFooter_Twitter_36x36_2x.png\" height=\"18px\" width=\"18px\" alt=\"Social Icon Twitter\"\n      /></a>&nbsp;<a href=\"https://www.facebook.com/bakktapp\" target=\"_blank\" title=\"Bakkt Facebook\"><img src=\"/publicdocs/images/SocialFooter_Facebook_36x36_2x.png\" height=\"18px\" width=\"18px\" alt=\"Facebook Icon\"\n      /></a>&nbsp;<a href=\"https://www.linkedin.com/company/bakkt/\" target=\"_blank\" title=\"LinkedIn Bakkt\"><img src=\"/publicdocs/images/SocialFooter_LinkedIn_36x36_2x.png\" width=\"18px\" height=\"18px\" alt=\"LinkedIn Icon\"\n      /></a>&nbsp;<a href=\"https://www.instagram.com/Bakktapp\" target=\"_blank\" title=\"Bakkt Instagram\"><img src=\"/publicdocs/images/SocialFooter_Instagram_36x36_2x.png\" width=\"18px\" height=\"18px\" alt=\"Instagram Icon\" /></a>\n    </div>\n  </div>\n</footer>\n\n<style>\n@media (max-width: 767px) {\n  .split-footer > * {\n    padding: 1rem;\n  }\n\n  .split-footer__logo {\n    flex-basis: 100%;\n  }\n}\n</style></div></div></div><script src=\"https://static.bakkt.com/component-init/18.14.0/component-init.min.js\"><\/script><!--googleon: all-->"}}</script><script type="application/json" class="component-data">{"name":"HeaderPartial","version":"18.3.61","props":{"url":"/header","elementId":"content-5472dd14-68a5-47e6-8fd9-762dcdb572dd"},"initialData":{"html":"<!--googleoff: all--><html><head></head><body><div class=\"tophead fixedheader\"><a href=\"/index\"><img src=\"/publicdocs/images/digital_asset_logo_550X122_google.png\" width=\"125px\"/></a><div><div id='content-fbb153c4-b63b-4d83-8b65-7ec7922411d9'><nav class=\"top-nav-menu\" data-reactroot=\"\"><style>\n.top-nav-menu > style {\n  display: none;\n}\n.top-nav-menu .mini-menu {\n  display: none;\n}\n\n.top-nav-menu ul {\n  list-style-type: none;\n  margin: 0;\n  padding: 0;\n  display: flex;\n  background: rgba(255,255,255,0);\n}\n\n.top-nav-menu a {\n  text-decoration: none;\n  color: #000;\n}\n\n.top-nav-menu li > ul {\n  visibility: hidden;\n}\n\n.top-nav-menu li.active > ul {\n  visibility: visible;\n  z-index: 1;\n}\n\n.top-nav-menu ul > li > a:not(.btn) {\n  color: #000;\n  padding: 5px 10px;\n  margin: 5px 5px;\n}\n\n.top-nav-menu ul > li.active > a:not(.btn):hover {\n  color: #00433c;\n}\n\n.top-nav-menu > ul > li > a:not(.btn) {\n  color: #000;\n}\n\n.top-nav-menu > ul > li.active > a:not(.btn) {\n  color: rgba(155,155,155,1);\n}\n\n.top-nav-menu > ul > li {\n  display: flex;\n  align-items: center;\n}\n\n.top-nav-menu > ul > li + li {\n  margin-right: 15px;\n  margin-left: 0;\n}\n\n.top-nav-menu > ul.right > li + li {\n  margin-left: 15px;\n  margin-right: 0;\n}\n\n.top-nav-menu li > ul {\n  position: absolute;\n  left: 0;\n  top: 100%;\n  flex-direction: column;\n  width: auto;\n  padding: 5px;\n  margin: 10px;\n  white-space: nowrap;\n}\n\n.top-nav-menu > ul > li.has-sub.active > ul {\n  box-shadow: 0 2px 5px -2px #ddd;\n}\n\n.top-nav-menu > ul > li.active > ul:before {\n  position: absolute;\n  content: '';\n  width: 0;\n  height: 0;\n  border-left: 6px solid transparent;\n  border-right: 6px solid transparent;\n  border-bottom: 6px solid #ddd;\n  left: 15px;\n  top: -6px;\n}\n.top-nav-menu > ul > li.active > ul:after {\n  position: absolute;\n  content: '';\n  width: 0;\n  height: 0;\n  border-left: 5px solid transparent;\n  border-right: 5px solid transparent;\n  border-bottom: 5px solid #fff;\n  left: 16px;\n  top: -5px;\n}\n\n.top-nav-menu li {\n  position: relative;\n  overflow: hidden;\n  cursor: pointer;\n}\n\n.top-nav-menu li.active {\n  overflow: visible;\n}\n\n.top-nav-menu li h6 {\n  color: #000;\n  padding-left: 10px;\n  margin-bottom: 0;\n}\n\n.top-nav-menu li > ul li > ul {\n  left: 100%;\n  top: 50%;\n  transform: translateY(-50%);\n  box-shadow: 2px 2px 5px -2px #ddd;\n  margin-left: 10px;\n}\n\n.top-nav-menu li > *:not(ul):not(i) {\n  display: block;\n}\n\n.top-nav-menu li span {\n  color: #bbb;\n  display: block;\n  font-size: 0.8em;\n}\n\n.top-nav-menu li.has-sub {\n  position: relative;\n  display: flex;\n  align-items: center;\n  padding-right: 5px;\n}\n.top-nav-menu li.has-sub > i {\n  color: #999;\n  font-size: 0.6em;\n  right: 5px;\n  position: absolute;\n  top: 50%;\n  transform: translateY(-50%);\n}\n\n.top-nav-menu > ul > li.has-sub > i {\n  transform: translateY(-50%) rotate(90deg);\n}\n\n.top-nav-menu li.has-sub.active > i {\n  transform: rotate(90deg);\n}\n\n.top-nav-menu ul.right {\n  justify-content: flex-end;\n}\n\n.top-nav-menu ul hr {\n  margin: 0;\n  border: 1px solid #eee;\n}\n\n.top-nav-menu > ul > li > a:not(.btn)::after {\n  display: block;\n  content: '';\n  border-bottom: 2px solid transparent;\n  transform: scaleX(0);\n  transition: transform 250ms ease-in-out;\n}\n\n.top-nav-menu > ul > li.active > a:not(.btn)::after {\n  border-bottom: 2px solid #000;\n  transform: scaleX(1);\n}\n\n.top-nav-menu li > ul li.active > ul {\n  margin-left: initial;\n  position: absolute;\n  top: 50%;\n  left: 100%;\n  transform: translateY(-50%);\n}\n.top-nav-menu ul > li.has-sub > ul {\n  opacity: 0;\n  transition: opacity 0.5s ease-out;\n  background-color: #fff;\n}\n\n.top-nav-menu ul > li.has-sub.active > ul {\n  opacity: 1;\n  border: 1px solid #eee;\n}\n\n.top-nav-menu ul > li.has-sub.active > ul li.has-sub.active > ul {\n  box-shadow: 2px 2px 5px -2px #ddd;\n  border-left: none;\n  left: 99%;\n  right: initial;\n  margin-left: 5px;\n}\n\n.top-nav-menu > ul > li > a.btn {\n  color: #000;\n  background-color: #fff;\n  border-width: 2px;\n  border-style: solid;\n  border-color: #00433c;\n  transition: color 0.2s linear, background-color 0.2s linear, border-color 0.2s linear;\n}\n\n.top-nav-menu > ul > li > a.btn:hover {\n  color: #fff;\n  background-color: #00433c;\n  border: 2px solid #00433c;\n}\n\n/*****************\n* Media queries *\n*****************/\n\n@media (max-width: 767px) {\n.top-nav-menu   .mini-menu {\n    display: block;\n    cursor: pointer;\n    position: relative;\n    text-align: right;\n    align-items: center;\n  }\n  .top-nav-menu .mini-menu > span {\n    position: absolute;\n    right: 0;\n    top: 50%;\n    transform: translateY(-50%);\n  }\n  .top-nav-menu .mini-menu > span:first-of-type {\n    text-transform: uppercase;\n    opacity: 1;\n    font-size: 0.8em;\n    transition: opacity 0.2s;\n  }\n  .top-nav-menu .mini-menu.open > span:first-of-type {\n    opacity: 0;\n  }\n  .top-nav-menu .mini-menu > span:last-child {\n    opacity: 0;\n  }\n  .top-nav-menu .mini-menu.open > span:last-child {\n    opacity: 1;\n    font-size: 1.5em;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n  }\n\n  .top-nav-menu .mini-menu.open + ul {\n    display: block;\n    position: absolute;\n    top: 100%;\n    left: 0;\n    right: 0;\n  }\n\n  .top-nav-menu > ul {\n    display: none;\n  }\n\n  .top-nav-menu ul {\n    flex-direction: column;\n    background-color: #fff;\n  }\n\n .top-nav-menu  ul a {\n    text-transform: uppercase;\n    font-size: 0.815rem;\n  }\n\n  .top-nav-menu li h6,\n  .top-nav-menu li span {\n    display: none;\n  }\n\n  .top-nav-menu > ul.right > li + li {\n    margin-left: 0;\n  }\n\n  .top-nav-menu > ul > li > a.btn {\n    margin: 15px 5px 15px 20px;\n  }\n\n  .top-nav-menu li > ul {\n    position: relative;\n  }\n\n  .top-nav-menu li.has-sub {\n    flex-direction: column;\n    align-items: flex-start;\n    padding-right: 0;\n  }\n\n  .top-nav-menu ul > li.has-sub.active > ul {\n    display: block;\n    box-shadow: none;\n    border-left-width: 0;\n    border-right-width: 0;\n    border-bottom-width: 0;\n    width: 100%;\n    margin: 0;\n    padding-left: 0;\n    padding-right: 0;\n    padding-top: 0;\n  }\n\n  .top-nav-menu ul > li.has-sub > i {\n    top: 23px;\n    right: 20px;\n    transform: rotate(90deg);\n  }\n\n  .top-nav-menu ul > li.has-sub > ul {\n    left: 0;\n    top: 0;\n    display: none;\n    background-color: #fff;\n  }\n\n  .top-nav-menu li > ul li.active > ul {\n    position: relative;\n  }\n\n  .top-nav-menu ul > li.has-sub.active > ul li.has-sub.active > ul {\n    left: 0;\n    margin: 0;\n    box-shadow: none;\n    transform: none;\n    padding: 0;\n  }\n\n  .top-nav-menu > ul > li.has-sub.active > ul {\n    border-bottom: none;\n    padding-bottom: 0;\n  }\n\n  .top-nav-menu > ul > li:first-of-type,\n  li + li {\n    border-top: 1px solid #eee;\n  }\n\n  .top-nav-menu > ul > li:last-child {\n    border-bottom: 1px solid #eee;\n  }\n\n  .top-nav-menu li > *:not(ul):not(i) {\n    max-width: 100%;\n    white-space: normal;\n  }\n\n  .top-nav-menu ul > li.active > ul a:not(.btn) {\n    margin-left: 20px;\n  }\n\n  .top-nav-menu ul > li.active > ul a:not(.btn) + ul a:not(.btn) {\n    margin-left: 40px;\n  }\n\n  .top-nav-menu ul > li.active > ul a:not(.btn) + ul a:not(.btn) + ul a:not(.btn) {\n    margin-left: 60px;\n  }\n}\n</style><div class=\"mini-menu\"><span>menu</span><span><i class=\"sprite-close\"></i></span></div><ul class=\"right\"><li class=\"\"><a href=\"/markets\" class=\"\">Markets</a></li><li class=\"\"><a href=\"/custody\" class=\"\">Custody</a></li><li class=\"\"><a href=\"/payments\" class=\"\">Payments</a></li><li class=\"has-sub\"><a href=\"#\" class=\"\">About</a><ul><li class=\"\"><a href=\"/about\" class=\"\">About</a></li><li class=\"\"><a href=\"/careers\" class=\"\">Careers</a></li></ul><i class=\"chevron-e\"></i></li><li class=\"\"><a href=\"/contact\" class=\"btn btn-primary\">Contact us</a></li></ul></nav></div><div id='content-0b637ffe-a5f2-4fc6-89bf-dbbbc7dcd09e'><div class=\"alert-container\" data-reactroot=\"\"></div></div></div></div></body></html><!--googleon: all--><div><div id='content-4bca22c3-f936-4431-b16f-dbc0a9722e86'><div data-reactroot=\"\"><div class=\"reserve-space-for-menu\"></div>\n<style>\n.reserve-space-for-menu {\n  margin-top:70px\n}\n.tophead nav {\n  text-transform: uppercase;\n  font-size: .85em;\n}\n.tophead {\n  width: 100%;\n  max-height: 70px;\n  z-index: 999;\n  padding: 15px 25px;\n  -webkit-transition: all 0.3s;\n  transition: all 0.3s;\n  opacity: 0;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n}\n.fixedheader {\n  position: fixed;\n  background-color: rgba(255, 255, 255, 1);\n  opacity: 1;\n  top: 0px;\n  border-bottom: 1px solid #ececed;\n}\n\n@media only screen and (max-width: 766px) {\n  .tophead {\n    padding-left: 15px;\n    padding-right: 15px;\n  }\n  nav {\n    margin-right: 0;\n  }\n}\n\n</style>\n<script>\ndocument.getElementsByTagName(\"IMG\") [0] .alt=\"Bakkt\";\n<\/script></div></div></div><script src=\"https://static.bakkt.com/cms-bakkt-navigation-menu/19.0.21/bakkt-navigation-menu-component.min.js\"><\/script><script src=\"https://static.bakkt.com/cms-banner/18.3.46/banner-component.min.js\"><\/script><script type=\"application/json\" class=\"component-data\">{\"name\":\"BakktNavigationMenu\",\"version\":\"19.0.21\",\"props\":{\"menuStructure\":\"align: right\\nitems:   \\n  - name: Markets\\n    link: '/markets'\\n  - name: Custody\\n    link: '/custody'\\n  - name: Payments\\n    link: '/payments'\\n  - name: About\\n    items:\\n    - name: About\\n      link: '/about'\\n    - name: Careers\\n      link: '/careers'\\n  - name: Contact us\\n    button: true\\n    link: '/contact'\",\"interMenuMargin\":15,\"intraPaddingTopBottom\":\"5\",\"intraPaddingLeftRight\":\"10\",\"intraMarginTopBottom\":5,\"intraMarginLeftRight\":5,\"submenuPadding\":\"5\",\"submenuMargin\":10,\"buttonBorderWidth\":2,\"linkColor\":{\"hex\":\"#000\",\"rgb\":{}},\"linkActiveColor\":{\"hsl\":{\"h\":191.94690265486724,\"s\":0,\"l\":0.6078431372549019,\"a\":1},\"hex\":\"#9b9b9b\",\"rgb\":{\"r\":155,\"g\":155,\"b\":155,\"a\":1},\"hsv\":{\"h\":191.94690265486724,\"s\":0,\"v\":0.6078431372549019,\"a\":1},\"oldHue\":191.94690265486724,\"source\":\"hex\"},\"subLinkHoverColor\":{\"hsl\":{\"h\":173.73134328358208,\"s\":1,\"l\":0.13137254901960785,\"a\":1},\"hex\":\"#00433c\",\"rgb\":{\"r\":0,\"g\":67,\"b\":60,\"a\":1},\"hsv\":{\"h\":173.73134328358208,\"s\":1,\"v\":0.2627450980392157,\"a\":1},\"oldHue\":191.94690265486724,\"source\":\"hex\"},\"backgroundColor\":{\"rgb\":{\"r\":255,\"g\":255,\"b\":255,\"a\":0}},\"subBackgroundColor\":{\"hex\":\"#fff\",\"rgb\":{}},\"underbarColor\":{\"hex\":\"#000\",\"rgb\":{}},\"subheaderColor\":{\"hex\":\"#000\",\"rgb\":{}},\"submenuLinkColor\":{\"hex\":\"#000\",\"rgb\":{}},\"descriptionColor\":{\"hex\":\"#bbb\",\"rgb\":{}},\"buttonColor\":{\"hex\":\"#000\",\"rgb\":{}},\"buttonBorderColor\":{\"hsl\":{\"h\":173.73134328358208,\"s\":1,\"l\":0.13137254901960785,\"a\":1},\"hex\":\"#00433c\",\"rgb\":{\"r\":0,\"g\":67,\"b\":60,\"a\":1},\"hsv\":{\"h\":173.73134328358208,\"s\":1,\"v\":0.2627450980392157,\"a\":1},\"oldHue\":173.73134328358208,\"source\":\"hex\"},\"buttonBackgroundColor\":{\"hex\":\"#fff\",\"rgb\":{}},\"buttonHoverColor\":{\"hex\":\"#fff\",\"rgb\":{}},\"buttonHoverBorderColor\":{\"hsl\":{\"h\":173.73134328358208,\"s\":1,\"l\":0.13137254901960785,\"a\":1},\"hex\":\"#00433c\",\"rgb\":{\"r\":0,\"g\":67,\"b\":60,\"a\":1},\"hsv\":{\"h\":173.73134328358208,\"s\":1,\"v\":0.2627450980392157,\"a\":1},\"oldHue\":173.73134328358208,\"source\":\"hex\"},\"buttonHoverBackgroundColor\":{\"hsl\":{\"h\":173.73134328358208,\"s\":1,\"l\":0.13137254901960785,\"a\":1},\"hex\":\"#00433c\",\"rgb\":{\"r\":0,\"g\":67,\"b\":60,\"a\":1},\"hsv\":{\"h\":173.73134328358208,\"s\":1,\"v\":0.2627450980392157,\"a\":1},\"oldHue\":173.73134328358208,\"source\":\"hex\"},\"elementId\":\"content-fbb153c4-b63b-4d83-8b65-7ec7922411d9\"},\"initialData\":null}<\/script><script type=\"application/json\" class=\"component-data\">{\"name\":\"Banner\",\"version\":\"18.3.46\",\"props\":{\"elementId\":\"content-0b637ffe-a5f2-4fc6-89bf-dbbbc7dcd09e\"},\"initialData\":null}<\/script>"}}</script><script type="application/json" class="component-data">{"name":"Banner","version":"18.3.46","props":{"messages":[{"active":true,"cookieName":"PrivacyBakkt0101","duration":null,"flags":["DESKTOP","MOBILE"],"isModal":true,"messageText":"This website use cookies and similar technologies to help us to understand how you use the website, and to give you the best online experience possible by way of tailored content and relevant advertising. Details of the cookies we use and instructions on how to disable them are set out in our Cookies Policy. By clicking \"Allow\" you agree to our use of cookies in accordance with our <a href=\"/cookies\">Cookie policy</a>.","modalCloseButtonText":"Allow","modalHeaderText":" "}],"elementId":"content-1e2aafe8-cb32-4eca-b079-43285f4e33db"},"initialData":null}</script><script type="application/json" class="component-data">{"name":"ChartMarketData","version":"19.0.21","props":{"chartTitle":"Bakkt ™ Bitcoin (USD) Monthly Futures","productId":"23808","hubId":"26066","disclaimerHtml":"Market data delayed minimum of 15 minutes","disclaimerTextColor":{"hsl":{"h":250,"s":0,"l":0,"a":1},"hex":"#000000","rgb":{"r":0,"g":0,"b":0,"a":1},"hsv":{"h":250,"s":0,"v":0,"a":1},"oldHue":250,"source":"hex"},"disclaimerFontSize":"12","footerHtml":"<a href=\"https://www.theice.com/products/72035464\" class=\"btn\" style=\"background: #00433c;\" target=\"_blank\">View product spec</a>","showContractHeader":true,"showDetailsFooter":true,"showSampleData":false,"hideLongTermRanges":true,"textTransform":"initial","lineColor":{"hsl":{"h":173.73134328358208,"s":1,"l":0.13137254901960785,"a":1},"hex":"#00433c","rgb":{"r":0,"g":67,"b":60,"a":1},"hsv":{"h":173.73134328358208,"s":1,"v":0.2627450980392157,"a":1},"oldHue":240,"source":"hex"},"textColor":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"headerTextColor":{"rgb":{"r":14,"g":107,"b":45,"a":1}},"chartTextColor":{"rgb":{"r":0,"g":0,"b":0,"a":1}},"chartBackgroundColor":{"rgb":{"r":0,"g":0,"b":0,"a":0}},"chartContainerBackgroundColor":{"rgb":{"r":0,"g":0,"b":0,"a":0}},"topGradientColor":{"hsl":{"h":0,"s":0,"l":0.8509803921568627,"a":1},"hex":"#d9d9d9","rgb":{"r":217,"g":217,"b":217,"a":1},"hsv":{"h":0,"s":0,"v":0.8509803921568627,"a":1},"oldHue":0,"source":"hex"},"topStop":30,"bottomGradientColor":{"hsl":{"h":153.8709677419355,"s":1,"l":0.24313725490196078,"a":1},"hex":"#007c46","rgb":{"r":0,"g":124,"b":70,"a":1},"hsv":{"h":153.8709677419355,"s":1,"v":0.48627450980392156,"a":1},"oldHue":235.55555555555551,"source":"hex"},"bottomStop":100,"elementId":"content-e3a402c4-6101-4ccc-a4cf-419a8ee318a4","targetId":"marketdata1"},"initialData":null}</script></body></html>
